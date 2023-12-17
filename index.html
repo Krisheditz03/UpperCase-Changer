@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppercase Changer</title>
+</head>
+<body style="background: linear-gradient(#45fb5f,#421350);height: 100vh; text-align: center;">
+   <h1>Uppercase Changer</h1>
+
+   
+        <div>
+            <label for="uc">Enter a number :</label>
+            <input style="border: 2px solid red; border-radius: 5px;" type="text" id="uc"><br><br>
+
+            <button style="border: 2px solid red; border-radius: 5px; background-color: yellow;" onclick="upperCase()">Check</button><br><br>
+
+            <label for="ans">Capitalized String : </label>
+            <p id="ans"></p>
+        </div>
+    
+
+    <script>
+        function upperCase() {
+            const name = document.getElementById("uc").value;
+            const uppercase = name.toUpperCase();
+            document.getElementById("ans").innerHTML = uppercase;
+
+        }
+    </script>
+</body>
+</html>
